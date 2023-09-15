@@ -1,0 +1,104 @@
+
+#header {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: ;
+}
+
+ .logo {
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Contenido {
+    display: grid;
+    place-items: center;
+    margin-left: ;
+    margin-right: ;
+}
+
+body  {
+    background-color: rgb(0, 0, 0);
+}
+
+ul, ol {
+    list-style: none;
+}
+  
+.nav li a {
+    background-color: rgb(139, 0, 0);
+    color: rgb(248, 206, 206);
+    text-decoration: none;
+    padding: 10px 60px;
+    display: flex;
+    
+}
+
+.nav li a:hover {
+background-color: brown;
+}
+
+.nav > li {
+    float: left;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 116px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
+.Abrir-menu {
+    display: none;
+}
+
+.Cerrar-menu {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .Abrir-menu {
+        display: block;
+    }
+    .Cerrar-menu{
+        display: block;
+        background-color: rgb(139, 0, 0);
+        color: rgb(248, 206, 206);
+        
+    }
+    /*#header {
+        display: none;
+    }*/
+    .nav {
+        flex-direction: column;
+    }
+    .nav li a{
+        width:100%;
+        height: 100%;
+        margin-right: 0%;
+        padding-left: 360px;
+        padding-right:  360px;
+        justify-content: left;
+        
+        
+    }
+    .Secciones {
+        border-bottom: 1px solid rgb(255, 84, 84);
+    }
+}
+

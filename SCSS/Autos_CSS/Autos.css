@@ -1,0 +1,192 @@
+/*Trate de englobar tanto los css que use para los distintos autos, como tmb trate de meter los grids que hice para la seccion de "historia"*/
+div img {
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover {
+transform: scale(1.2);
+}
+/*lo que hice aca, es que dependiendo de su resolucion, el contorno de las imagenes cambien de color y que siempre mantenga el mismo tamaño*/
+@media (max-width:320px){
+    div img{
+    margin-left: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(78, 78, 78);
+    }
+}
+
+@media (min-width:320px){
+    div img{
+    margin-left: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(131, 57, 57);
+    }
+}
+
+@media (min-width:1024px){
+    div img{
+    margin-left: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(57, 89, 150);
+    }
+}
+
+
+/*hice lo mismo que hice con las imagenes, dependiendo a resolucion el borde de la imagen cambia de color  mantiene su tamaño*/
+div video {
+    margin-left: 30% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    
+    
+}
+
+@media (max-width:320px){
+    video{
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(78, 78, 78);
+    }
+}
+
+@media (min-width:320px){
+    video{
+    margin-left: 1% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(131, 57, 57);
+    }
+}
+
+@media (min-width:1024px){
+    video{
+    margin-left: 1% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    border-color: rgb(57, 89, 150);
+    }
+}
+
+
+
+/*Este grid es para las imagenes de la seccion de "historia"*/
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 40%;
+}
+
+.imagen4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 20%;
+}
+
+.gallery_item:nth-child() {
+   grid-column-start: span 2;
+}
+.gallery_item:nth-child() {
+    grid-row-start: span 2;
+ }
+
+/*El siguiente @media es para el grid de imagenes que realice anteriormente, lo hice en 320px, tamaño de un celular en posicion vertical*/
+
+@media (min-width:320px) {
+    .grid-conteiner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gallery_item:nth-child(4) {
+        grid-column-start: span 3;
+     }
+    
+     .gallery_item:nth-child(1) {
+         grid-row-start: span 1;
+      }
+}
+/*Aca coloque una resolucion para 1024px*/
+@media (max-width:1024px) {
+    .grid-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery_item:nth-child(2) {
+        grid-column-start: span 2;
+     }
+     .gallery_item:nth-child(3) {
+        grid-column-start: span 2;
+     }
+     .gallery_item:nth-child(1) {
+         grid-row-start: span 2;
+      }
+}
+
+h2 {
+    color: beige;
+}
+
+p {
+    color: beige;
+    font-size: 110%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+ul {
+    color: beige;
+    font-size: 110%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.grid-conteiner {
+    margin-left: -10%;
+    margin-right: 50%;
+    
+}
+
